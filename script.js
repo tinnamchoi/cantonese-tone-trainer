@@ -44,7 +44,7 @@ function randomize() {
 
 function start() {
   document.getElementById('start').style.display = 'none';
-  document.getElementById('quiz').style.display = 'block';
+  document.getElementById('quiz').style.display = 'flex';
   randomize();
 }
 
@@ -57,6 +57,12 @@ function process(response) {
   
   stats[solution - 1][response - 1]++;
   localStorage.setItem('stats', JSON.stringify(stats));
+  
+  if (response === solution) {
+    document.getElementById('result').innerHTML = 'Correct';
+  } else {
+    document.getElementById('result').innerHTML = 'The correct answer was ' + solution;
+  }
   
   display();
   randomize();

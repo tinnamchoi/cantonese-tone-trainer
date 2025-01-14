@@ -34,83 +34,89 @@
         <button onclick="start()">Start</button>
       </div>
       <div id="quiz" style="display: none;">
-        Press one of these buttons or press the number on your keyboard: <br>
-        <button class="reponse" onclick="process(1)">1</button>
-        <button class="reponse" onclick="process(2)">2</button>
-        <button class="reponse" onclick="process(3)">3</button>
-        <button class="reponse" onclick="process(4)">4</button>
-        <button class="reponse" onclick="process(5)">5</button>
-        <button class="reponse" onclick="process(6)">6</button>
+        <div>
+          Press one of these buttons or press the number on your keyboard: <br>
+          <button class="reponse" onclick="process(1)">1</button>
+          <button class="reponse" onclick="process(2)">2</button>
+          <button class="reponse" onclick="process(3)">3</button>
+          <button class="reponse" onclick="process(4)">4</button>
+          <button class="reponse" onclick="process(5)">5</button>
+          <button class="reponse" onclick="process(6)">6</button>
+          <div id="result">&nbsp;</div>
+        </div>
       </div>
-      <table>
-        <tr>
-          <th rowspan="2" colspan="2">stats</th>
-          <th colspan="6">response</th>
-        </tr>
-        <tr>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-        </tr>
-        <tr>
-          <th rowspan="6">solution</th>
-          <th>1</td>
-          <td id="11"></td>
-          <td id="12"></td>
-          <td id="13"></td>
-          <td id="14"></td>
-          <td id="15"></td>
-          <td id="16"></td>
-        </tr>
-        <tr>
-          <th>2</td>
-          <td id="21"></td>
-          <td id="22"></td>
-          <td id="23"></td>
-          <td id="24"></td>
-          <td id="25"></td>
-          <td id="26"></td>
-        </tr>
-        <tr>
-          <th>3</td>
-          <td id="31"></td>
-          <td id="32"></td>
-          <td id="33"></td>
-          <td id="34"></td>
-          <td id="35"></td>
-          <td id="36"></td>
-        </tr>
-        <tr>
-          <th>4</td>
-          <td id="41"></td>
-          <td id="42"></td>
-          <td id="43"></td>
-          <td id="44"></td>
-          <td id="45"></td>
-          <td id="46"></td>
-        </tr>
-        <tr>
-          <th>5</td>
-          <td id="51"></td>
-          <td id="52"></td>
-          <td id="53"></td>
-          <td id="54"></td>
-          <td id="55"></td>
-          <td id="56"></td>
-        </tr>
-        <tr>
-          <th>6</td>
-          <td id="61"></td>
-          <td id="62"></td>
-          <td id="63"></td>
-          <td id="64"></td>
-          <td id="65"></td>
-          <td id="66"></td>
-        </tr>
-      </table>
+      <details>
+        <summary>stats</summary>
+        <table>
+          <tr>
+            <th rowspan="2" colspan="2">stats</th>
+            <th colspan="6">response</th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+          </tr>
+          <tr>
+            <th rowspan="6">solution</th>
+            <th>1</td>
+            <td id="11"></td>
+            <td id="12"></td>
+            <td id="13"></td>
+            <td id="14"></td>
+            <td id="15"></td>
+            <td id="16"></td>
+          </tr>
+          <tr>
+            <th>2</td>
+            <td id="21"></td>
+            <td id="22"></td>
+            <td id="23"></td>
+            <td id="24"></td>
+            <td id="25"></td>
+            <td id="26"></td>
+          </tr>
+          <tr>
+            <th>3</td>
+            <td id="31"></td>
+            <td id="32"></td>
+            <td id="33"></td>
+            <td id="34"></td>
+            <td id="35"></td>
+            <td id="36"></td>
+          </tr>
+          <tr>
+            <th>4</td>
+            <td id="41"></td>
+            <td id="42"></td>
+            <td id="43"></td>
+            <td id="44"></td>
+            <td id="45"></td>
+            <td id="46"></td>
+          </tr>
+          <tr>
+            <th>5</td>
+            <td id="51"></td>
+            <td id="52"></td>
+            <td id="53"></td>
+            <td id="54"></td>
+            <td id="55"></td>
+            <td id="56"></td>
+          </tr>
+          <tr>
+            <th>6</td>
+            <td id="61"></td>
+            <td id="62"></td>
+            <td id="63"></td>
+            <td id="64"></td>
+            <td id="65"></td>
+            <td id="66"></td>
+          </tr>
+        </table>
+      </details>
       <details>
         <summary>log</summary>
         <div id="log"></div>

@@ -2,6 +2,7 @@ button {
   font-size: 1.5em;
   height: 64px;
   width: 100%;
+  margin: 8px 0px;
 }
 
 div#quiz button {
@@ -14,8 +15,12 @@ div#quiz {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 128px;
-  min-width: 1024px;
+  min-height: 256px;
+  width: 800px;
+}
+
+div#quiz > div {
+  display: block;
 }
 
 table {
